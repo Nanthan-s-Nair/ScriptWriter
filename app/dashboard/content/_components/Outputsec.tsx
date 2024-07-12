@@ -5,11 +5,11 @@ import { Copy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface props {
-  aiout: string|undefined;
+  aiout: string;
 }
 
 function Outputsec({ aiout }: props) {
-  const editorRef = useRef<any>();
+  const editorRef = useRef<any>('');
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function Outputsec({ aiout }: props) {
   useEffect(() => {
     if (isClient && editorRef.current) {
       const editorInst = editorRef.current.getInstance();
-      editorInst.setMarkdown(aiout || '');
+      editorInst.setMarkdown(aiout);
     }
   }, [aiout, isClient]);
 
@@ -27,7 +27,7 @@ function Outputsec({ aiout }: props) {
     <div className='bg-white shadow-lg border rounded-lg'>
       <div className='flex justify-between items-center p-3'>
         <h2 className='font-bold text-blue-700'>Your Result</h2>
-        <Button><Copy /> Copy</Button>
+        <Button className='bg-emerald-600 gap-2' onClick={()=>navigator.clipboard.writeText(aiout)}><Copy /> Copy</Button>
       </div>
       {isClient && (
         <Editor

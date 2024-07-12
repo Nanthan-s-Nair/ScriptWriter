@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
-import send from '../../components/send.png'
+import send from '../../../../components/send.png'
 import { Loader2Icon } from 'lucide-react'
 
 interface PROPS {
@@ -46,7 +46,7 @@ function Inputsec({ reqtemp,userinp,loading }: PROPS) {
             }
           </div>
         ))}
-        <Button type='submit' disabled={loading}>
+        <Button type='submit' disabled={loading} className='bg-transparent'>
           {loading&&<Loader2Icon className='animate-spin'/>}
           <Image src={send} alt='send img' height={50} width={50}/>
         </Button>
