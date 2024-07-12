@@ -1,15 +1,15 @@
-import airplane from '/Users/nanthansnair/saas/components/airplane.png';
-import bibimbap from '/Users/nanthansnair/saas/components/bibimbap.png';
-import git from '/Users/nanthansnair/saas/components/github.png'
-import reward from '/Users/nanthansnair/saas/components/reward.png';
-import programming from '/Users/nanthansnair/saas/components/programming.png';
-import tools from '/Users/nanthansnair/saas/components/tools.png'; 
-import fitness from '/Users/nanthansnair/saas/components/fitness.png'; 
-import translator from '/Users/nanthansnair/saas/components/google.png'; 
-import rewriteArticle from '/Users/nanthansnair/saas/components/article.png';
-import textImprover from '/Users/nanthansnair/saas/components/note.png';
-import addEmojis from '/Users/nanthansnair/saas/components/star.png';
-import instagramPostGenerator from '/Users/nanthansnair/saas/components/instagram.png';
+import airplane from '../../components/airplane.png';
+import bibimbap from '../../components/bibimbap.png';
+import git from '../../components/github.png';
+import reward from '../../components/reward.png';
+import programming from '../../components/programming.png';
+import tools from '../../components/tools.png';
+import fitness from '../../components/fitness.png';
+import translator from '../../components/google.png';
+import rewriteArticle from '../../components/article.png';
+import textImprover from '../../components/note.png';
+import addEmojis from '../../components/star.png';
+import instagramPostGenerator from '../../components/instagram.png';
 
 export default [
     {
