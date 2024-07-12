@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '@toast-ui/editor/dist/toastui-editor.css';
 import { Editor } from '@toast-ui/react-editor';
 import { Copy } from 'lucide-react';
-import { Button } from 'react-bootstrap';
+import { Button } from '@/components/ui/button';
 
 interface props {
   aiout: string|undefined;

@@ -5,8 +5,8 @@ import { TEMPLATE } from '../../_components/Templatelist'
 import Image from 'next/image'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { Button } from 'react-bootstrap'
-import send from '/Users/nanthansnair/saas/components/send.png'
+import { Button } from '@/components/ui/button'
+import send from '../../components/send.png'
 import { Loader2Icon } from 'lucide-react'
 
 interface PROPS {
